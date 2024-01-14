@@ -1,0 +1,465 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+/* Header Section Styles */
+.c1 {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+    background-color: #74EBD5;
+    background: linear-gradient(to right, #283048, #859398); 
+}
+
+.header-bar {
+	position: relative;
+	width: 100%;
+	min-width: 300px;
+	height: 50px;
+	border: 10px solid transparent;
+	border-top: 10px solid #fffa;
+	border-left: 10px solid #fffa;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.header-bar::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30%;
+	height: 49px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fffa;
+	border-right: 10px solid #fffa;
+	transition: 0.3s linear all;
+}
+.header-bar > .logo {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: 20px;
+	transform: translateY(-50%);
+	color: #fffc;
+	cursor: default;
+	user-select: none;
+}
+.slider-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+.slider-menu > li {
+	display: inline-flex;
+	padding: 14px;
+	margin-left: 2px;
+	color: #ffffff;
+	cursor: pointer;
+	transition: 0.3s linear all;
+	user-select: none;
+}
+.slider-menu > li:hover {
+	color: #faa;
+	box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+}
+.slider-menu > li a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+
+/* Image Section Styles */
+#image {
+    text-align: center; 
+    padding: 10px 0; 
+
+}
+
+#image .container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#image img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+/* Intro Section Styles */
+#intro {
+    position: relative;
+    z-index: 1;
+    height: 350px;
+}
+
+.start {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    min-height: 400px;
+}
+
+.start h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.start p {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.start ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.start ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    background-color: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+  
+
+/* Course Highlights Section Styles */
+#highlights {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#highlights .container {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+#highlights h3 {
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+#highlights ul {
+    list-style: none; 
+    padding: 0;
+    text-align: center;
+}
+
+#highlights li {
+    margin-bottom: 15px; 
+    color: #555; 
+}
+
+
+.ch h3,#curriculum h3,#enroll-info h3 {
+    text-align: center;
+        font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+        text-transform: uppercase;
+    
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    
+    .ch h3:after,
+    .ch h3:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000;
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+    #curriculum h3:after,
+    #curriculum h3:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000;
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+    #enroll-info h3:after,
+    #enroll-info h3:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000;
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+
+
+/* Curriculum Section Styles */
+#curriculum {
+    padding: 50px 0;  
+    text-align: center;
+}
+
+#curriculum .container {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#curriculum h3 {
+    color: #333;
+    margin-bottom: 30px; 
+    text-align: center;
+}
+
+.module {
+    margin-bottom: 40px;
+}
+
+.module h4 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.module ul {
+    list-style: none;
+    padding: 0;
+}
+
+.module li {
+    margin-bottom: 8px; 
+    color: #555;
+    text-align: center;
+}
+
+.module p {
+    color: #555;
+    margin-top: 5px;
+}
+
+
+/* Enrollment Information Section Styles */
+#enroll-info {
+    padding: 50px 0;
+}
+
+#enroll-info .container {
+    text-align: center;
+}
+
+#enroll-info h3 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h4 {
+    color: #3498db;
+}
+
+/* Enrollment Form Styles */
+.enrollment-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.enrollment-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enrollment-form label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.enrollment-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.enrollment-form input[type="submit"] {
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 1em;
+}
+
+.enrollment-form input[type="submit"]:hover {
+    background-color: #1565C0;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#contact h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Section Styles */
+footer {
+    background-color: #616161;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-bar {
+        padding: 10px;
+    }
+
+    .header-bar::after {
+        width: 50%;
+    }
+
+    .slider-menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #283048;
+        flex-direction: column;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .slider-menu.show {
+        display: flex;
+    }
+
+    .slider-menu li {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #465a6c;
+    }
+
+    #intro .start {
+        padding: 30px;
+    }
+
+    #highlights .container,
+    #curriculum .container,
+    #enroll-info .container {
+        max-width: 100%;
+    }
+
+    #highlights li,
+    .module li {
+        text-align: center;
+    }
+
+    .module h4 {
+        font-size: 1.5em;
+    }
+
+    .module ul,
+    .start ul {
+        padding-left: 0;
+    }
+
+    .enrollment-form,
+    .contact-info {
+        max-width: 100%;
+        margin-right: 0; /
+    }
+    #enroll-info h3 {
+        font-size: 24px; 
+        margin-bottom: 20px;
+    }
+
+    .info-box {
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .header-bar {
+        padding: 5px;
+    }
+
+    .header-bar::after {
+        display: none;
+    }
+
+    .slider-menu {
+        top: 30px;
+    }
+
+    .module h4 {
+        font-size: 1.2em;
+    }
+
+    .slider-menu li {
+        padding: 8px;
+    }
+
+    .enrollment-form,
+    .contact-info {
+        text-align: center;
+    }
+}
+
+
